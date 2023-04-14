@@ -1,0 +1,16 @@
+{
+  "files": {
+    "main.css": "/rick-and-morty/static/css/main.466bb6c8.css",
+    "main.js": "/rick-and-morty/static/js/main.f7b40829.js",
+    "static/media/wp3277791-rick-and-morty-4k-wallpapers.png": "/rick-and-morty/static/media/wp3277791-rick-and-morty-4k-wallpapers.bf8b67bbffa9527089fd.png",
+    "static/media/kisspng-rick-sanchez-morty-smith-lawnmower-dog-scientist-n-5af4f92bc144b5.png": "/rick-and-morty/static/media/kisspng-rick-sanchez-morty-smith-lawnmower-dog-scientist-n-5af4f92bc144b5.4062790715260040117916.b5c8867cbd82baac5052.png",
+    "static/media/wp3277729-rick-and-morty-4k-wallpapers.jpg": "/rick-and-morty/static/media/wp3277729-rick-and-morty-4k-wallpapers.c7a3481addec394425eb.jpg",
+    "index.html": "/rick-and-morty/index.html",
+    "main.466bb6c8.css.map": "/rick-and-morty/static/css/main.466bb6c8.css.map",
+    "main.f7b40829.js.map": "/rick-and-morty/static/js/main.f7b40829.js.map"
+  },
+  "entrypoints": [
+    "static/css/main.466bb6c8.css",
+    "static/js/main.f7b40829.js"
+  ]
+}

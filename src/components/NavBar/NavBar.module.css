@@ -1,0 +1,32 @@
+.navbar {
+  background-color: #000000a1;
+  display: flex;
+  justify-content: space-around;
+  flex-wrap: wrap;
+  box-shadow: #ab04d1e0 0 2px 20px 1px;
+}
+
+.navlinks {
+  display: flex;
+  gap: 20px;
+  list-style: none;
+  padding: 10px;
+  align-items: center;
+  place-items: center;
+}
+
+.navlinks li {
+  color: #fff;
+}
+
+.logo {
+  display: flex;
+  align-items: center;
+}
+.logo img {
+  width: 10%;
+}
+
+.logo h1 {
+  color: green;
+}

@@ -1,0 +1,10 @@
+.buton {
+  position: relative;
+  display: inline-block;
+  color: #ffffff;
+  text-transform: uppercase;
+  overflow: hidden;
+  transition: 0.5s;
+  border: none;
+  font-weight: 700;
+}

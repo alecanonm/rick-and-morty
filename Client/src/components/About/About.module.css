@@ -1,0 +1,19 @@
+.about {
+  display: grid;
+  place-content: center;
+  place-items: center;
+  margin: 60px 5em;
+  background-color: rgba(175, 221, 221, 0.84);
+  padding: 20px 50px;
+  border-radius: 20px;
+  box-shadow: #0000007e 0 0px 4px 1px;
+}
+
+.about section {
+  padding: 20px;
+}
+
+.about section p {
+  font-weight: 600;
+  color: #000000c7;
+}

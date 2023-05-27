@@ -24,26 +24,22 @@ export function App(props) {
     !access && navigate("/");
   }, [access, navigate]);
 
-  function login(userData) {
+  const login = async (userData) => {
     const { email, password } = userData;
-    console.log(userData);
     const URL = "http://localhost:3001/rickandmorty/login/";
-    axios(URL + `?email=${email}&password=${password}`).then(({ data }) => {
-      const { access } = data;
-      console.log(access);
+    let response = await axios(URL + `?email=${email}&password=${password}`);
+    try {
+      const { access } = response.data;
       setAccess(access);
-    });
-    setAccess(true);
-    !access && navigate("/home");
-
-    // if (userData.password === password && userData.email === email) {
-    //   setIsAccess(!false);
-    //   navigate("/home");
-    // }
-  }
+      access && navigate("/home");
+    } catch (error) {
+      console.log("AXIIOS ERROR", error);
+    }
+  };
 
   const logOut = () => {
     setAccess(false);
+    navigate("/");
   };
 
   const [characters, setCharacters] = useState([]);

@@ -17,7 +17,6 @@ export default function reducer(state = initialState, { type, payload }) {
     case "ADD_FAV":
       return { ...state, myFavorites: payload, allCharacters: payload };
 
-      break;
     // case DELETE_FAVORITE:
     //   const copy = state.myFavorites.filter((char) => char.id !== payload);
     //   return {
@@ -27,7 +26,7 @@ export default function reducer(state = initialState, { type, payload }) {
     //   };
     case "REMOVE_FAV":
       return { ...state, myFavorites: payload, allCharacters: payload };
-      break;
+
     case FILTER:
       const filterByGender = [...state.allCharacters].filter(
         (char) => char.gender === payload
@@ -36,7 +35,7 @@ export default function reducer(state = initialState, { type, payload }) {
         ...state,
         myFavorites: filterByGender,
       };
-      break;
+
     case ORDER:
       const order = [...state.allCharacters].sort((a, b) => {
         if (a.id > b.id) {
@@ -51,7 +50,7 @@ export default function reducer(state = initialState, { type, payload }) {
         ...state,
         myFavorites: order,
       };
-      break;
+
     default:
       return { ...state };
   }

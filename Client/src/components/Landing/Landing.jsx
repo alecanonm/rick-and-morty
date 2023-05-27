@@ -17,7 +17,11 @@ export default function Landing(props) {
       passwordValidation({ ...userData, [property]: value }, erros, setErrors);
   };
 
-  const handleSubmit = (userData) => {
+  // const handleSubmit = (userData) => {
+  //   login(userData);
+  // };
+  const handleSubmit = (event) => {
+    event.preventDefault();
     login(userData);
   };
 
@@ -47,10 +51,7 @@ export default function Landing(props) {
             <label htmlFor="password">Password:</label>
           </div>
           <p className={styles.error}>{erros.password}</p>
-          <Button
-            onClick={() => handleSubmit(userData)}
-            className={styles.buton}
-          >
+          <Button onClick={handleSubmit} className={styles.buton}>
             <span></span>
             <span></span>
             <span></span>

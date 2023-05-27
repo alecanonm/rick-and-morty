@@ -14,14 +14,12 @@ export function Favorite(props) {
   }
 
   function byGender(e) {
+    e.preventDefault();
     const value = e.target.value;
     if (!myFavorites) return;
     dispatch(filterCards(value));
   }
 
-  {
-    console.log(myFavorites);
-  }
   return (
     <div>
       <div className={style.filter}>
@@ -45,6 +43,8 @@ export function Favorite(props) {
             image={char.image}
             gender={char.gender}
             species={char.species}
+            status={char.status}
+            origin={char.origin?.name}
           />
         ))}
       </div>
